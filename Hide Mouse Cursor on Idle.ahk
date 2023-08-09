@@ -22,6 +22,9 @@ keys = ``1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./
 ; For every defined key, register a call to hide the mouse cursor
 Loop Parse, keys
    HotKey ~*%A_LoopField%, Hoty
+HotKey ~$*Space, Hoty
+HotKey ~$*Backspace, Hoty
+HotKey ~$*Delete, Hoty
 return
 
 ; Checks if the mouse has moved, and if so, shows it and records the new position
